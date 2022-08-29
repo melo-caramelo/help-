@@ -1,0 +1,288 @@
+@font-face {
+  font-family: modern;
+  src: url(/styles/fonts/Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+  font-family: media;
+  src: url(/styles/fonts/Product\ Sans\ Bold.ttf);
+}
+
+@font-face {
+  font-family: destaque;
+  src: url(/styles/fonts/Product\ Sans\ Regular.ttf);
+}
+
+body {
+  font-family: 'media';
+  background-color: #F9F9F9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*HEADER*/
+.pages {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: 'modern';
+}
+
+.pages:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  width: 90px;
+  margin-left: 20px;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #191A19;
+  height: 75px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+/*HEADER*/
+
+/* SECTION */
+
+.container {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.texts {
+  text-align: center;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 50px;
+  padding-top: 0px;
+  font-family: 'media';
+  color: black;
+  margin-bottom: 5px;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: 'modern';
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cardbox {
+  display: block;
+  height: 330px;
+  width: 100%;
+}
+
+.upside {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  width: 40%;
+  height: 50%;
+  margin-bottom: 60px;
+}
+
+.downside {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  width: 40%;
+  height: 50%;
+  margin-top: -50px;
+}
+
+.company {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.rectangle {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.rectangle {
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.rectangle:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* SECTION */
+
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  position: fixed;
+  margin-bottom: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 15px;
+}
+
+footer p {
+  color: black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.space {
+  text-decoration: none;
+  color: #4C3575;
+}
+
+/* FOOTER */
+
+/* RESPONSIVE */
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 43vw;
+    height: 92vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    margin-right: 0px;
+    margin-right: 0px;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .description {
+    font-size: 10px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  .upside {
+    width: 100%;
+    margin-top: -60px;
+  }
+
+  .downside {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .rectangle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cardbox {
+    height: 200px;
+    margin-top: 60px;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+  background: #191A19;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+/* RESPONSIVE */
