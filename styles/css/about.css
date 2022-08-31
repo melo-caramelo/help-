@@ -180,11 +180,12 @@ nav {
 
   .description {
     width: 80%;
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .image {
     width: 200px;
+    margin-top: 40px;
   }
 
   .up-side {
@@ -196,7 +197,7 @@ nav {
   }
 
   .contatos p {
-    font-size: 10px;
+    font-size: 15px;
   }
 
 }
