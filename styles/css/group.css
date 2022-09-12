@@ -160,6 +160,16 @@ nav {
   font-size: 15px;
 }
 
+.card .job2 {
+  font-family: 'modern';
+  font-weight: bold;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 12px;
+}
+
 .card .img {
   width: 70px;
   height: 80px;
@@ -167,6 +177,10 @@ nav {
   border-radius: 15px;
   margin: auto;
   margin-top: 25px;
+}
+
+#amg {
+  font-size: 11px;
 }
 
 .img2 {
@@ -260,7 +274,7 @@ nav {
 
   #card1 {
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 90px;
   }
 
   #card2 {
@@ -269,7 +283,7 @@ nav {
 
   #card3 {
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 90px;
   }
 
   #card4 {
@@ -278,7 +292,7 @@ nav {
 
   #card5 {
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 90px;
   }
 
   .card {
